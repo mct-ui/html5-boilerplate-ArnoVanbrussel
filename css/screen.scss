@@ -216,14 +216,23 @@ h1 {
 }
 
 h2 {
+  font-weight: 700; font-size: $ms3;
+  line-height: calc($baseline * 3);
+  margin-bottom: $space-m;
 }
 
 h3 {
+  font-weight: 700; font-size: $ms1;
+  line-height: calc($baseline * 3);
+  margin-bottom: $space-m;
 }
 
 h4,
 h5,
 h6 {
+  font-weight: 700; font-size: $ms0;
+  line-height: calc($baseline * 3);
+  margin-bottom: $space-m;
 }
 
 p,
