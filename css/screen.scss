@@ -158,16 +158,21 @@ $breakpoints: (
 *,
 *:before,
 *:after {
-  // Reset box-sizing
+  box-sizing: border-box;
 }
 
 * {
   // Reset margin and font-size and font-weight
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
 
 img {
   // make images block level elements
+  display: block;
   // make images responsive
+  max-width: 100%;
 }
 
 /*---------------------------------------/*
@@ -181,6 +186,10 @@ img {
 */
 
 html {
+  font-size: calc($root-font-size / 16 * 100%); // 16 px
+  line-height: 1.5; // 24 px
+  font-family: $font-family-primary; // Global font family
+  color: $color-text; // Global text color
 }
 
 /*
